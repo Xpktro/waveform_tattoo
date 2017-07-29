@@ -1,0 +1,75 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  font-family: monospace;
+}
+
+h1 {
+  padding: 0 .5em;
+  margin-top: .5em;
+  text-align: center;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+
+ul {
+  padding: 1em;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  padding: .3em 0;
+}
+
+label {
+  display: inline-block;
+  text-align: right;
+  padding-right: .5em;
+  width: 45%;
+}
+
+input, select {
+  width: 45%;
+}
+
+button, .save {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 0.9em;
+  color: white;
+  background-color: black;
+  border: solid .3em;
+  border-color: #555;
+  padding: 1em;
+  width: 45%;
+  margin: 0;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.seed {
+  width: 20%;
+}
+.generate {
+  padding: .3em 1em;
+  width: 20%;
+}
+
+p {
+  margin: 2em;
+  text-align: center;
+}

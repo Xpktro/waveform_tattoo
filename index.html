@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Waveform Tattoos</title>
+    <link rel="stylesheet" href="css/application.css">
+  </head>
+  <body>
+    <a href="https://github.com/Xpktro/waveform_tattoo"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+    <h1>Waveform Tattoo Generator</h1>
+    <ul>
+      <li>
+        <label for="width">Width: </label>
+        <input type="number" id="width" min="100" max="300" value="180" onchange="draw()">
+      </li>
+
+      <li>
+        <label for="padding">Padding: </label>
+        <input type="number" id="padding" min="0" max="200" value="50" onchange="draw()">
+      </li>
+
+      <li>
+        <label for="stroke">Stroke width: </label>
+        <input type="number" id="stroke" min="1" max="20" value="9" onchange="draw()">
+      </li>
+
+      <li>
+        <label for="corner">Corner Size: </label>
+        <input type="number" id="corner" min="0" max="40" value="0" onchange="draw()">
+      </li>
+
+      <li>
+        <label for="axis">Axis: </label>
+        <input type="checkbox" id="axis" onclick="draw()">
+      </li>
+
+      <li>
+        <label for="glitch">Glitch: </label>
+        <input type="checkbox" id="glitch" onclick="draw()">
+      </li>
+
+      <li>
+        <label for="seed">Glitch seed: </label>
+        <input type="text" id="seed" class="seed" onchange="draw()">
+        <button type="button" class="generate" onclick="generateSeed();draw()">Generate</button>
+      </li>
+
+      <li>
+        <label for="columns">Columns: </label>
+        <select id="columns" onchange="draw()">
+          <option value="4">4</option>
+          <option value="2">2</option>
+          <option value="1">1</option>
+        </select>
+      </li>
+
+      <li>
+        <button type="button" onclick="draw()">Draw</button>
+        <a class="save" id="save" onclick="save()">Save</a>
+      </li>
+    </ul>
+    <canvas id="canvas"></canvas>
+    <p>2017 - Moisés Cachay</p>
+    <script type="text/javascript" src="js/seedrandom.js"></script>
+    <script type="text/javascript" src="js/paper-full.min.js"></script>
+    <script type="text/javascript" src="js/application.js"></script>
+  </body>
+</html>
