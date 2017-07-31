@@ -34,6 +34,10 @@ li {
   padding: .3em 0;
 }
 
+li:last-child {
+  margin-top: 1em;
+}
+
 label {
   display: inline-block;
   text-align: right;
@@ -58,7 +62,7 @@ button, .save {
   margin: 0;
   text-decoration: none;
   cursor: pointer;
-  margin-top: 1em;
+  margin-top: 0em;
 }
 
 .seed {
@@ -72,4 +76,10 @@ button, .save {
 p {
   margin: 2em;
   text-align: center;
+}
+
+span {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
 }
